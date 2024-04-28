@@ -1,11 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://bd6aetdsmtcbf"]
+[gd_scene load_steps=3 format=3 uid="uid://bd6aetdsmtcbf"]
 
 [ext_resource type="PackedScene" uid="uid://c3vli0exfdxye" path="res://Objects/Player.tscn" id="1_uybbl"]
+[ext_resource type="PackedScene" uid="uid://c8vv12vtwwf5c" path="res://Objects/Chest.tscn" id="2_ywag6"]
 
 [node name="MainScene" type="Node2D"]
+y_sort_enabled = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3.445, 3.445)
+zoom = Vector2(4.721, 4.721)
 
 [node name="Player" parent="." instance=ExtResource("1_uybbl")]
 position = Vector2(0, -2)
+
+[node name="Chest" parent="." instance=ExtResource("2_ywag6")]
+position = Vector2(-22, -3)
