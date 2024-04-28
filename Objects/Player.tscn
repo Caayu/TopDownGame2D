@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3vli0exfdxye"]
+
+[ext_resource type="SpriteFrames" uid="uid://d33mlso73fk2c" path="res://Sprites/Player.tres" id="1_2q160"]
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_2q160")
+animation = &"death"
+frame_progress = 0.112922
